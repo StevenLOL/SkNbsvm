@@ -4,8 +4,7 @@ from sklearn.preprocessing import binarize
 import numpy as np
     
 class NBmatrix(BaseEstimator, TransformerMixin):
-   
-    
+	
     def __init__(self, alpha, bina, n_jobs = 1):
         self.alpha = alpha
         self.bina = bina
