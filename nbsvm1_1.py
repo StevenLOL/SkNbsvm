@@ -58,4 +58,4 @@ class NBmatrix(BaseEstimator, TransformerMixin):
             self.setattr(parameter, value)
         return self
 
-    #dsalja
+    #dsaljasdad
