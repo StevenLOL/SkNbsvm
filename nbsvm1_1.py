@@ -48,4 +48,13 @@ class NBmatrix(BaseEstimator, TransformerMixin):
     def fit_transform(self, X, y):
         self.fit(X,y)
         return self.transform(X)
+        
+        
+    def get_params(self, deep=True):
+        return {"alpha": self.alpha, "binarize": self.bina, "n_jobs" : self.n_jobs}
+
+    def set_params(self, **parameters): 
+        for parameter, value in parameters.items():
+            self.setattr(parameter, value)
+        return self
 
